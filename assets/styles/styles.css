@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .logo {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+
+}
+
+.container .logo img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}
+
+.container nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.container nav ul li  {
+    margin: 0 10px;
+}
+
+.container nav ul li a {
+    text-decoration: none;
+    color: #212529;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 10px 15px;
+}
+
+.container nav ul li a:hover {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+
+
+/* Main Section */
+main {
+    width: 100%;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+}
+
+.container .image-hero img {
+    width: 100%;
+    height: auto;
+}
+
+.container .content {
+    width: 100%;
+    max-width: 500px;
+    margin-left: 20px;
+    background-color: red;
+    padding: 20px;
+    border-radius: 10px;
+    color: whitesmoke
+}
+
+.container .content h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.container .content p {
+    text-align: justify;
+
+}
+
+.container .content .button-main {
+    padding: 10px 15px;
+    background-color: brown;
+    color: whitesmoke;
+    font-weight: 500;
+}
+
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #212529;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: 700;
+}
+
+/*Responsive Media Queries*/
+@media (max-width: 991px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container .logo img {
+        margin-bottom: 20px;
+    }
+
+    .container .image-hero {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container .image-hero img {
+        width: 50%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .container .content {
+        text-align: center;
+    }
+}
+
